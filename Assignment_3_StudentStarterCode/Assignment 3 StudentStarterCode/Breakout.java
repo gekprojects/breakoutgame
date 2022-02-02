@@ -13,7 +13,7 @@ public class Breakout extends JFrame{
 		setSize(Settings.WINDOW_WIDTH, Settings.WINDOW_HEIGHT);
 		// GK - set the title
 		setTitle(Settings.WINDOW_NAME);
-		// GK - set the background colour to white
+		// GK - set the background color to white
 		setBackground(Color.white);
 		// GK - set resizable to false
 		setResizable(false);

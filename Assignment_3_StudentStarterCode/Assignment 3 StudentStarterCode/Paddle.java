@@ -21,9 +21,13 @@ public class Paddle extends Sprite {
 	
 	public void update() {
 		x += xVelocity;
-		// TODO: Prevent the paddle from moving outside of the screen
-		// This can be done using two if statements (one for the left side of the screen and one for the right)
-		
+		// GK set paddle barrier for left and right side of screen
+		if (x <= 0) {
+			setX(0);
+		} if (x >= Settings.WINDOW_WIDTH - Settings.PADDLE_WIDTH) {
+			setX(Settings.WINDOW_WIDTH - Settings.PADDLE_WIDTH);
+			// >> Recheck why paddle is going off of screen here
+		}
 	}
 	
 	public void paint(Graphics g) {
@@ -32,6 +36,6 @@ public class Paddle extends Sprite {
 	
 	public void setXVelocity(int vel) {
 		// TODO: Set x velocity
-		vel = xVelocity;
+		xVelocity = vel;
 	}
 }
