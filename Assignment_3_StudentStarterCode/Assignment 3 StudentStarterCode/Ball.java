@@ -57,11 +57,11 @@ public class Ball extends Sprite {
 	
 	public void setXVelocity(int x) {
 		// GK - set xVelocity
-		this.x = xVelocity;
+		xVelocity = x;
 	}
 	public void setYVelocity(int y) {
 		// GK = set yVelocity
-		this.y = yVelocity;
+		yVelocity = y;
 	}
 	
 	public int getXVelocity() {

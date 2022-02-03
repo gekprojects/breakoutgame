@@ -100,6 +100,7 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
 				ball.resetPosition();
 				ball.setYVelocity(-1);
 			}
+		}
 		
 		
 		// Check for win
@@ -151,7 +152,6 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
 	                bricks[i].setBroken(true);
 	            }
 			}
-		}
 		}
 	}
 	
