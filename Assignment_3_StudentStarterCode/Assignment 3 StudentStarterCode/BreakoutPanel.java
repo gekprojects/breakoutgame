@@ -22,8 +22,6 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
 	private Brick bricks[];
 	
 	
-		
-	
 	public BreakoutPanel(Breakout game) {
 		
 		addKeyListener(this);
@@ -102,7 +100,7 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
 				ball.resetPosition();
 				ball.setYVelocity(-1);
 			}
-		}
+		
 		
 		// Check for win
 		boolean bricksLeft = false;
@@ -153,6 +151,7 @@ public class BreakoutPanel extends JPanel implements ActionListener, KeyListener
 	                bricks[i].setBroken(true);
 	            }
 			}
+		}
 		}
 	}
 	

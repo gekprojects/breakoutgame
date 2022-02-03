@@ -6,9 +6,9 @@ public class Brick extends Sprite {
 	
 	public Brick(int x, int y) {
 		// TODO: Set x using the parameter
-		this.x = x;
+		setX(x);
 		// TODO: Set y using the parameter
-		this.y = y;
+		setY(y);
 		// TODO: Set the width and height of the brick using Settings.BRICK_WIDTH/HEIGHT
 		setWidth(Settings.BRICK_WIDTH);
 		setHeight(Settings.BRICK_HEIGHT);
